@@ -18,7 +18,7 @@ RUN wget -O libc6.deb https://snapshot.debian.org/archive/debian/20220319T215212
 RUN wget -O libcurl4.deb http://ftp.de.debian.org/debian/pool/main/c/curl/libcurl4_7.74.0-1.3+deb11u3_amd64.deb && \
     dpkg -i libcurl4.deb
 
-RUN wget -O curl.deb http://ftp.debian.org/debian/pool/main/c/curl/curl_7.82.0-2~bpo11+1_amd64.deb && \
+RUN wget -O curl.deb 	http://ftp.de.debian.org/debian/pool/main/c/curl/curl_7.74.0-1.3+deb11u3_amd64.deb && \
     dpkg -i curl.deb
 
 RUN wget -O logsave.deb http://ftp.debian.org/debian/pool/main/e/e2fsprogs/logsave_1.46.5-2~bpo11+2_amd64.deb && \
