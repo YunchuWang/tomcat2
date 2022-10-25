@@ -15,7 +15,7 @@ RUN apt-get update && \
 RUN wget -O libc6.deb https://snapshot.debian.org/archive/debian/20220319T215212Z/pool/main/g/glibc/libc6_2.31-13%2Bdeb11u3_amd64.deb && \
     dpkg -i libc6.deb
 
-RUN wget -O libcurl4.deb http://ftp.debian.org/debian/pool/main/c/curl/libcurl4_7.82.0-2~bpo11+1_amd64.deb && \
+RUN wget -O libcurl4.deb http://ftp.de.debian.org/debian/pool/main/c/curl/libcurl4_7.74.0-1.3+deb11u3_amd64.deb && \
     dpkg -i libcurl4.deb
 
 RUN wget -O curl.deb http://ftp.debian.org/debian/pool/main/c/curl/curl_7.82.0-2~bpo11+1_amd64.deb && \
