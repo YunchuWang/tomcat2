@@ -27,7 +27,7 @@ RUN wget -O logsave.deb http://ftp.debian.org/debian/pool/main/e/e2fsprogs/logsa
 RUN wget -O libgd2.deb http://ftp.debian.org/debian/pool/main/libg/libgd2/libgd3_2.2.5-5.2_amd64.deb && \
     dpkg -i libgd2.deb
 
-RUN apt-get update && apt --fix-broken install && \
+RUN apt-get update && apt --fix-broken -y install && \
     apt-get -yqq purge mariadb-common
 
 # Install python packages and put everything in the running directory
