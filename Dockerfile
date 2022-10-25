@@ -30,8 +30,8 @@ RUN wget -O libgd2.deb http://ftp.debian.org/debian/pool/main/libg/libgd2/libgd3
 RUN apt-get update && apt --fix-broken -y install && \
     apt-get -yqq purge mariadb-common
 
-# Install python packages and put everything in the running directory
-COPY requirements.txt /
-RUN pip3 install -r /requirements.txt
+# # Install python packages and put everything in the running directory
+# COPY requirements.txt /
+# RUN pip3 install -r /requirements.txt
 
 COPY . /home/site/wwwroot
